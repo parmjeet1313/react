@@ -12,12 +12,13 @@ function Users()
     { name: 'nav', age: '10' }
   ])    
   return(
-      <div>
+      <>
           <h1>hello listing is here</h1>
-    {
-        user.length==55?<div>yes ,  this is right</div>:<div>No length should be 5 </div>
-    }
-        </div>
+          <h1>hello listing is here</h1>
+          <h1>hello listing is here</h1>
+          <h1>hello listing is here</h1>
+    
+        </>
     )
       
 
