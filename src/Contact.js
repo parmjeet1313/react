@@ -1,12 +1,14 @@
-import React, { useEffect, useState } from "react";
+import React, { useState } from "react";
 function Contact(props) {
   // function test()
   // {
   //   console.warn("test function")
   // }
-  const test =()=>
+  const  [val,setVal]=useState("gurmeet")
+  const test =(e)=>
   {
-    console.warn("test function with arrow funciton")
+    console.warn("test function with arrow funciton",e.target.value)
+    setVal(e.target.value)
   }
   return (
 
@@ -18,8 +20,9 @@ function Contact(props) {
 {/*       
       <button onClick={function(){console.warn("hello click done")}}>
         normal fucntion */}
-        
-        <button onClick={test}>
+          <input type="text" value={val} onChange={test}/>
+        {/* <button onClick={test}> */}
+        <button onClick={()=>alert(val)}>
         click me  
 
       </button>
