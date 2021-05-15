@@ -3,6 +3,7 @@ import About from "./About";
 import Contact from "./Contact";
 import Users from "./users";
 import "./App.css";
+import CreateUser from "./CreateUser";
 
 function App() {
   
@@ -12,7 +13,8 @@ function App() {
       {/* <About name={name} /> */}
 
       {/* <Contact /> */}
-      <Users />
+      {/* <Users /> */}
+      <CreateUser />
     </div>
   );
 }
