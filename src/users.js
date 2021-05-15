@@ -1,5 +1,5 @@
 import React, { useState, useEffect, Fragment } from "react";
-import {Button} from 'react-bootstrap'
+import {Table} from 'react-bootstrap'
 
 
 function Users()
@@ -14,15 +14,27 @@ function Users()
   ])    
   return(
       <Fragment>
-          <h1>hello listing is here</h1>
-          <Button variant="primary">Primary</Button>{' '}
-  <Button variant="secondary">Secondary</Button>{' '}
-  <Button variant="success">Success</Button>{' '}
-  <Button variant="warning">Warning</Button>{' '}
-  <Button variant="danger">Danger</Button> <Button variant="info">Info</Button>{' '}
-  <Button variant="light">Light</Button> <Button variant="dark">Dark</Button>{' '}
-  <Button variant="link">Link</Button>
-    
+         <Table striped bordered hover>
+  <thead>
+    <tr>
+      <th>#</th>
+      <th>Name</th>
+      <th>Age</th>
+      <th>Address</th>
+    </tr>
+  </thead>
+  <tbody>
+   {
+       user.map((item,index)=> <tr key={index}>
+       <td>{index}</td>
+       <td>{item.name}</td>
+       <td>{item.age}</td>
+       <td>{item.address}</td>
+     </tr>
+     )
+   }
+  </tbody>
+</Table>
         </Fragment>
     )
       
