@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, Fragment } from "react";
 
 
 function Users()
@@ -12,13 +12,13 @@ function Users()
     { name: 'nav', age: '10' }
   ])    
   return(
-      <>
+      <Fragment>
           <h1>hello listing is here</h1>
           <h1>hello listing is here</h1>
           <h1>hello listing is here</h1>
           <h1>hello listing is here</h1>
     
-        </>
+        </Fragment>
     )
       
 
