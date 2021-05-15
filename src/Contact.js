@@ -1,24 +1,30 @@
-import React,{useEffect,useState} from "react";
+import React, { useEffect, useState } from "react";
 function Contact(props) {
-
-  // const[name,setName]=useState("raman")
-  // const[age,setAge]=useState(25)
-  useEffect(()=>{
-    console.warn("check props",props.name)
-  },[])
-  useEffect(()=>{
-    console.warn("check props 2 for update",props.name)
-  },[props.name])
-
-
-  let data = "this is jsx contact component";
+  // function test()
+  // {
+  //   console.warn("test function")
+  // }
+  const test =()=>
+  {
+    console.warn("test function with arrow funciton")
+  }
   return (
-    <div>
-      <h1>{data}</h1>
-      <h2>{props.name}</h2>
 
+    <div>
+      <h1>contact us component</h1>
+      {/* <button onClick={()=>{console.warn("hello click done")}}> //
+      
+      arrow funtion */}
+{/*       
+      <button onClick={function(){console.warn("hello click done")}}>
+        normal fucntion */}
+        
+        <button onClick={test}>
+        click me  
+
+      </button>
       
     </div>
-  );
+  )
 }
 export default Contact;
