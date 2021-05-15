@@ -1,16 +1,18 @@
-import React, { useState } from "react";
+
 import About from "./About";
 import Contact from "./Contact";
+import Users from "./users";
 import "./App.css";
 
 function App() {
-  const [name, setName] = useState("navroop");
+  
   return (
     <div className="App">
       <h1>hello from react</h1>
       {/* <About name={name} /> */}
 
-      <Contact />
+      {/* <Contact /> */}
+      <Users />
     </div>
   );
 }
